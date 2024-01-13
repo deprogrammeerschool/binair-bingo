@@ -1,8 +1,10 @@
 body {
-  margin: 4rem; /* eliminates margin spacing on body so that the footer color is able to fill the window */
-  /* Sets the background for the entire page to a light yellow color */
-  background-color: #FAF8DA;
+  margin: 2rem 4rem;
   font-family: 'Open Sans', sans-serif; /* Font from Google Fonts */
+}
+
+p {
+  margin-bottom: 2rem;
 }
 
 .card {

@@ -1,3 +1,3 @@
 # binair-bingo
 
-Genereert op elke refresh van de pagina 25 willekeurige binaire getallen uit een set van 1 t/m 40 binaire getallen. De getallen worden geplaatst in een grid die kan worden gebruikt voor een bingokaart.
+Bij elke refresh van de pagina worden 25 willekeurige binaire getallen aangemaakt, gekozen uit een reeks van 1 tot 40. Deze getallen verschijnen in een grid dat gebruikt kan worden als bingokaart.
