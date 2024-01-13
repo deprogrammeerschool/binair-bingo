@@ -1,18 +1,48 @@
 body {
-  margin: 2rem 4rem;
-  font-family: 'Open Sans', sans-serif; /* Font from Google Fonts */
+  margin: 2rem;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 p {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  font-size: 1.25rem;
+}
+
+.container {
+  position: relative;
+  border: 6px solid #6DA4AA;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 2rem 3rem 9rem;
+  width: 600px;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h1 div {
+  font-family: 'Lemon', sans-serif;
+}
+
+.bingo-image {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+}
+
+.logo-image {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 1.75rem;
 }
 
 .card {
-  width: 665px;
+  width: 600px;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(5, 125px);
-  grid-template-rows: repeat(5, 125px);
+  grid-template-columns: repeat(5, 112px);
+  grid-template-rows: repeat(5, 112px);
   grid-auto-flow: column;
 }
 
@@ -20,7 +50,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ddd;
   border: 3px solid #333;
   border-radius: 5px;
   padding: 20px;

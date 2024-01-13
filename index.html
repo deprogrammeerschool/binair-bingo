@@ -6,19 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Binair Bingo</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <body>
 
-      <h1>Binaire getallen</h1>
+      <div class="container">
+
+      <img class="bingo-image" src="images/bingo.png" alt="" height="100px"/>
+
+      <h1>
+        <div>Werkblad</div>
+        <small>Binair bingo</small>
+      </h1>
 
       <p>
-        Op deze site worden 25 willekeurige binaire getallen
-        getoond uit een reeks van 1 tot 40 binaire getallen.</br>
-        Ververs de pagina om nieuwe binaire getallen te genereren.    
+        Naam: ______________________________
       </p>
     
       <div class="card"></div>
+
+      <img class="logo-image" src="images/dps-logo.png" alt="" height="70px"/>
+
+    </div>
   
     </body>
 
@@ -46,11 +58,14 @@
       return array.slice(0, amount);
     }
 
-    selectedNumbers(numbers).forEach((number) => {
+    selectedNumbers(numbers).forEach((number, index) => {
       const box = document.createElement("div");
       box.classList.add('box');
       box.innerHTML = number;
       card.append(box)
+      if (index == 12) {
+        box.innerHTML = '<img src="./images/dps-logo.png" height="32px">'
+      }
     });
     </script>
 
