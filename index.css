@@ -1,0 +1,26 @@
+body {
+  margin: 4rem; /* eliminates margin spacing on body so that the footer color is able to fill the window */
+  /* Sets the background for the entire page to a light yellow color */
+  background-color: #FAF8DA;
+  font-family: 'Open Sans', sans-serif; /* Font from Google Fonts */
+}
+
+.card {
+  width: 665px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 125px);
+  grid-template-rows: repeat(5, 125px);
+  grid-auto-flow: column;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border: 3px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}

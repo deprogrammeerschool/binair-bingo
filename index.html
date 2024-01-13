@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Binair Bingo</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <body>
+    
+      <div class="card"></div>
+  
+    </body>
+
+    <script>
+
+    const numbers = ["1", "10", "11", "100", "101", "110", "111", "1000", "1001", "1010",
+    "1011", "1100", "1101", "1110", "1111", "10000", "10001", "10010", "10011", "10100",
+    "10101", "10110", "10111", "11000", "11001", "11010", "11011", "11100", "110101",
+    "11110", "11111", "100000", "100001", "100010", "100011", "100100", "100101",
+    "100110", "100111", "101000"];
+    const card = document.querySelector('.card');
+
+    function selectedNumbers(array, amount = 25) {
+      let currentIndex = array.length,  randomIndex;
+
+      while (currentIndex > 0) {
+
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+      }
+      console.log(array.slice(0, amount))
+      return array.slice(0, amount);
+    }
+
+    selectedNumbers(numbers).forEach((number) => {
+      const box = document.createElement("div");
+      box.classList.add('box');
+      box.innerHTML = number;
+      card.append(box)
+    });
+    </script>
+
+</html>
