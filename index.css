@@ -10,15 +10,27 @@ p {
 
 .container {
   position: relative;
-  border: 6px solid #6DA4AA;
-  border-radius: 8px;
   margin: 0 auto;
   padding: 2rem 3rem 9rem;
   width: 600px;
 }
 
+.info {
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+}
+
+.werkblad-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  z-index: -1;
+}
+
 h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 h1 div {
@@ -44,6 +56,7 @@ h1 div {
   grid-template-columns: repeat(5, 112px);
   grid-template-rows: repeat(5, 112px);
   grid-auto-flow: column;
+  padding-top: 13rem;
 }
 
 .box {
@@ -54,4 +67,10 @@ h1 div {
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
+}
+
+.no-print {
+  @media print {
+    display: none;
+  }
 }
